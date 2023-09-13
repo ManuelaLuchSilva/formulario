@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        #txtNome {
+            color: rgb(104, 0, 0);
+            background-color: blanchedalmond;
+        }
+
+        #txtData {
+            color: rgb(0, 0, 0);
+            background-color: bisque;
+        }
+
+        form {
+            background-color: rgb(250, 239, 226);
+            padding: 5%;
+        }
+
+        input {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        select{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="txtNome">Nome:</label>
+        <input type="text" name="" id="txtNome">
+        <br>
+        <label for="txtNome">Sobrenome:</label>
+        <input type="text" name="" id="txtNome">
+        <br>
+        <label for="txtEmail">e-mail</label>
+        <input type="email" name="" value="@gmail.com" id="email">
+        <br>
+        <label for="Nasc">Data de Nascimento</label>
+        <input type="date" name="" id="txtData">
+        <br>
+        <input type="checkbox" name="" id="check">
+        <label for="ensinoF">Fez ensino fundamental?</label>
+        <br>
+        <input type="checkbox" name="" id="check">
+        <label for="ensinoF">Fez ensino médio?</label>
+        <br>
+        <input type="checkbox" name="" id="check">
+        <label for="ensinoF">Fez ensino superior?</label>
+        <br>
+        <label for="afinidade">Qual você tem mais afinidade?</label>
+        <select name="afn" id="opções">
+            <option value="Nsei">Outro/Nenhum</option>
+            <option value="info">Informática</option>
+            <option value="quimi">Química</option>
+            <option value="agro">Agronômia</option>
+        </select>
+        <br>
+        <label for="">Qual seu gênero</label>
+        <br>
+        <input type="radio" name="gender" value="">
+        <label for="">Feminino</label><br>
+        <input type="radio" name="gender" value="">
+        <label for="">Masculino</label><br>
+        <input type="radio" name="gender" value="">
+        <label for="">Outro/Prefiro ñ dizer</label>
+    </form>
+</body>
+
+</html>
