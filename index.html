@@ -4,21 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulário</title>
     <style>
         #txtNome {
             color: rgb(104, 0, 0);
-            background-color: blanchedalmond;
+            background-color: rgb(255, 235, 205);
+        }
+        #txtNome:hover {
+            background-color: rgb(112, 78, 78);
+            color: rgb(240, 248, 255);
+        }
+
+        #email, #senha{
+            color: rgb(54, 38, 38);
+            background-color: rgb(236, 222, 200);
+        }
+        #email:hover, #senha:hover{
+            color: rgb(201, 217, 217);
+            background-color: rgb(19, 32, 55);
         }
 
         #txtData {
-            color: rgb(0, 0, 0);
-            background-color: bisque;
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
         }
 
         form {
-            background-color: rgb(250, 239, 226);
+            max-width: 400px;
+            margin: 10px auto;
             padding: 5%;
+            background-color: rgb(250, 239, 226);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(39, 36, 36, 0.5);
         }
 
         input {
@@ -26,7 +43,27 @@
             margin: 0;
             margin-bottom: 10px;
         }
-        select{
+
+        input[type="date"] {
+            border-radius: 20px;
+            color: rgb(240, 255, 255);
+        }
+
+        label[for="ensinoF"] {
+            background-color: rgb(208, 153, 153);
+        }
+
+        input[type="checkbox"]:hover {
+            transition: 700ms linear;
+            transform: rotate(360deg);
+        }
+
+        input[type="radio"]:hover {
+            transition-duration: 1s;
+            transform: rotate(500deg);
+        }
+
+        select {
             margin: 10px;
         }
     </style>
@@ -43,8 +80,14 @@
         <label for="txtEmail">e-mail</label>
         <input type="email" name="" value="@gmail.com" id="email">
         <br>
+        <label for="senha">Qual sua identificação/senha: </label><br>
+        <input type="password" name="senha" id="senha">
+        <br>
         <label for="Nasc">Data de Nascimento</label>
         <input type="date" name="" id="txtData">
+        <br>
+        <label for="appt">Horário disponível:</label>
+        <input type="time" id="horario" name="horario">
         <br>
         <input type="checkbox" name="" id="check">
         <label for="ensinoF">Fez ensino fundamental?</label>
@@ -63,7 +106,10 @@
             <option value="agro">Agronômia</option>
         </select>
         <br>
-        <label for="">Qual seu gênero</label>
+        <label for="myfile">Documento com as autenticações necessárias:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <br>
+        <label for="gender">Qual seu gênero</label>
         <br>
         <input type="radio" name="gender" value="">
         <label for="">Feminino</label><br>
